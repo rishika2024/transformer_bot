@@ -8,7 +8,7 @@ https://private-user-images.githubusercontent.com/172546714/572351318-91a1eaea-1
 
 | Component         | Details                       |
 |-------------------|-------------------------------|
-| Base Frame        | F450                          |
+| Base Frame        | F450 Drone                         |
 | Flight Controller | Pixhawk 6C Mini               |
 | Compute           | Raspberry Pi 5                |
 | PWM Controller    | PCA9685 (16 channel)
