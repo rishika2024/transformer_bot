@@ -8,3 +8,5 @@ https://private-user-images.githubusercontent.com/172546714/572351318-91a1eaea-1
 ## Full System Architechture
 
 <img width="1546" height="778" alt="System" src="https://github.com/user-attachments/assets/4eacb93b-da3b-4b1f-897c-339659905d14" />
+
+<b> Feel free to check out my project portfolio for additional videos </b>
