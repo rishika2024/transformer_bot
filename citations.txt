@@ -1,0 +1,8 @@
+https://docs.circuitpython.org/projects/servokit/en/latest/
+https://www.youtube.com/watch?v=6G1nHfvl4aI&list=LL&index=2&t=235s
+https://grabcad.com/library/anti-vibration-platform-for-pixhawk-and-apm-1
+https://grabcad.com/library/pixhawk-6c-mini-1/details?folder_id=13745993
+https://grabcad.com/library/pca9685-8
+https://grabcad.com/library/raspberry-pi-4-model-b-9
+https://grabcad.com/library/f450-quadcopter-drone-frame-1
+https://grabcad.com/library/sg90-micro-servo-9g-tower-pro-1
