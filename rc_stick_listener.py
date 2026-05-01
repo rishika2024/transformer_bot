@@ -63,7 +63,7 @@ class RCStickListener(Node):
 
     def listener_callback(self, msg: ManualControlSetpoint):
         # Handle morph countdown — runs every callback (~50Hz)
-        # After 150 ticks (~3 seconds), stops motors and exits morphing
+        # After 3000 ticks (~60 seconds), stops motors and exits morphing
         if self.state == 'MORPHING':
             self.count += 1
             if self.count >= 150:
@@ -81,14 +81,14 @@ class RCStickListener(Node):
                 self.state = 'MORPHING'
                 self.next_state = 'GROUND'
                 self.count = 0
-                move_forward()  # testing with move_forward for now
+                close_morph()
 
             elif swa == 'OFF':
                 self.get_logger().info('GROUND->AIR Transition!')
                 self.state = 'MORPHING'
                 self.next_state = 'AIR'
                 self.count = 0
-                move_backward()  # testing with move_backward for now
+                open_morph()
 
         self.prev_swa = swa
 
@@ -177,10 +177,10 @@ def close_morph():
 
 def stop_morph():
     kit._pca.channels[0].duty_cycle = 0
-    kit._pca.channels[1].duty_cycle = 5599
+    kit._pca.channels[1].duty_cycle = 0
     kit._pca.channels[2].duty_cycle = 0
     kit._pca.channels[3].duty_cycle = 0
-    kit._pca.channels[1].duty_cycle = 5592
+    kit._pca.channels[1].duty_cycle = 0
 
 def main(args=None):
     rclpy.init(args=args)
